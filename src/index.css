@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background color */
+}
+
+header {
+    background-color: #f368e0; /* Pink background color */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff9ff3; /* Light pink button background color */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f368e0; /* Darker pink button background color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 5px;
+    color: #333; /* Updated text color */
+}
