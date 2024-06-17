@@ -35,11 +35,14 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #333;
+    color: #ffb6c1;
+    background-color: #fff;
 }
 
 /* Sections */
@@ -57,6 +60,14 @@ section {
 section.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+section:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #ffe4e1;
+    color: #333;
 }
 
 .container {
@@ -81,11 +92,12 @@ section.show {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .project a:hover {
     background-color: #ff69b4;
+    color: #fff;
 }
 
 /* Contact section */
