@@ -11,7 +11,6 @@ body {
 /* Header and navigation */
 header {
     background-color: #ffb6c1;
-    color: #fff;
     padding: 1rem 0;
     text-align: center;
     position: sticky;
@@ -35,15 +34,15 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #333;
     background-color: #fff;
+    color: #333;
     border-radius: 5px;
-    padding: 0.5rem;
 }
 
 /* Hero section */
@@ -91,6 +90,7 @@ section:hover {
 .container {
     max-width: 1200px;
     margin: auto;
+    padding: 0 1rem;
 }
 
 /* Project styles */
