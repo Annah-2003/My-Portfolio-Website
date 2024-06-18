@@ -120,11 +120,26 @@ section:hover {
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
 }
+.demo-btn {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+.demo-btn:hover {
+    background-color: #ffb6c1;
+}
 
 .project a:hover {
     background-color: #ff69b4;
     transform: scale(1.05);
 }
+
 
 /* Contact section */
 #contact p {
