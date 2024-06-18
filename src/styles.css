@@ -35,14 +35,34 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 0.5rem;
-    border-radius: 5px;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ffb6c1;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #333;
     background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff69b4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: #ff69b4;
+    margin-top: 0.5rem;
 }
 
 /* Sections */
@@ -64,10 +84,8 @@ section.show {
 
 section:hover {
     transform: scale(1.02);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    background-color: #ffe4e1;
-    color: #333;
 }
 
 .container {
@@ -92,12 +110,11 @@ section:hover {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .project a:hover {
     background-color: #ff69b4;
-    color: #fff;
 }
 
 /* Contact section */
@@ -114,6 +131,26 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Typewriter effect */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #ff69b4;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff69b4 }
 }
 
 /* Animations */
@@ -141,5 +178,13 @@ html {
 
     section {
         padding: 2rem 1rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
     }
 }
