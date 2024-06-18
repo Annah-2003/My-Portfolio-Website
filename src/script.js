@@ -94,3 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
     revealSection();
     highlightNavLinkOnScroll();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const demoButtons = document.querySelectorAll('.demo-btn');
+    demoButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const demoUrl = button.getAttribute('data-demo-url');
+            const iframe = button.nextElementSibling;
+            iframe.src = demoUrl;
+        });
+    });
+});
