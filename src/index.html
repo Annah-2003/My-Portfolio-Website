@@ -40,17 +40,28 @@
             <div class="project">
                 <h3>Chuo Yangu</h3>
                 <iframe src="https://chuo-yangu.vercel.app/" frameborder="0"></iframe>
-                <p>Project description...</p>
-                <p>In today's fast-paced world, CHUO YANGU addresses the persistent communication challenges faced by students in universities, colleges, and schools, enhancing their productivity, collaboration, and well-being by delivering information quickly, efficiently, and reliably.
-                </p>
+                <p>In today's fast-paced world, CHUO YANGU addresses the persistent communication challenges faced by students in universities, colleges, and schools, enhancing their productivity, collaboration, and well-being by delivering information quickly, efficiently, and reliably.</p>
                 <a href="https://github.com/SolveMMG/PHASE--5-SEV-0">View Code</a>
+                <button class="open-modal" data-modal="modal-chuo-yangu">View Full Demo</button>
+                <div id="modal-chuo-yangu" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe src="https://chuo-yangu.vercel.app/" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
             <div class="project">
                 <h3>Her-Link</h3>
                 <iframe src="https://her-link.vercel.app/home" frameborder="0"></iframe>
-                <p>Project description...</p>
                 <p>HerLink aims to create a user-friendly environment where individuals can connect with their girlfriends and chat about anything and everything. The application features a sleek and modern design, making it appealing and easy to navigate for users of all ages.</p>
                 <a href="https://github.com/Annah-2003/Her-Link">View Code</a>
+                <button class="open-modal" data-modal="modal-her-link">View Full Demo</button>
+                <div id="modal-her-link" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe src="https://her-link.vercel.app/home" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -58,7 +69,13 @@
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
-           
+            <ul>
+                <li>JavaScript, HTML, CSS</li>
+                <li>C++, Java, Python</li>
+                <li>Flask and React frameworks</li>
+                <li>Website deployment with Vercel, Render, and Netlify</li>
+                <li>Problem-solving and attention to detail</li>
+            </ul>
             <div class="typewriter">
                 <p id="typewriter-text"></p>
             </div>
@@ -73,12 +90,25 @@
                 <p>Article summary...</p>
                 <a href="blog-post-url">Read More</a>
             </article>
+            <p>Coming soon...</p>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
             <p>Phone Number: <a href="tel:0717035023">0717035023</a></p>
             <p>Email: <a href="mailto:irenengitau@gmail.com">irenengitau@gmail.com</a></p>
         </div>
